@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL2</title>
+</head>
+<body>
+    <h1>PARCIAL 2</h1>
+    <form>
+        <input type="text" placeholder="Ingrese un texto" id="text">
+        <button onclick="convert()">Convertir texto</button>
+    </form>
+    <form>
+        <input type="number" placeholder="number1" id="number_one">
+        <input type="number" placeholder="number2" id="number_two"> 
+    </form>
+    <style>
+        form{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+    </style>
+    <script>
+        let text = document.getElementById('#text');
+        let button = document.querySelector('button');
+        button.addEventListener('click', function() {
+    let inputValue = text.value;
+    if (/\d/.test(inputValue)) {
+        text.style.backgroundColor = "red";
+        alert("Error: Has ingresado al menos un número!");
+    } else {
+        let size = inputValue.length;
+        for(let i=0; i<size; i++){
+           alert(inputValue.charAt[i]);
+        }
+    }
+});
+       let number_one = document.getElementById("#number_one");
+        let number_two = document.getElementById("number_two");
+        if(number & 2 ===0){
+            print("el numero es par");
+        }
+        
+    </script>
+</body>
+</html>
